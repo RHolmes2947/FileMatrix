@@ -8,7 +8,6 @@ public class Convolution {
 	}
 
 	public Object filter(Matrix originalImage) {
-int rows = 
 		return null;
 	}
 
