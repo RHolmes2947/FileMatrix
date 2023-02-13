@@ -1,7 +1,10 @@
 package lab3.matrices;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.Reader;
 import java.util.Scanner;
 
 public class FileMatrix {
@@ -22,9 +25,13 @@ public class FileMatrix {
 	}
 	
 	
-	public boolean save(File outputFile) {
+	public boolean save(File outputFile) throws FileNotFoundException {
 		// Just have to make a method to save a matrix file to a text file now
+		
+		  Reader file = new FileReader(file);
+		  BufferedReader reader = new BufferedReader(file);
 		return false;
+		
 	}
 
 }
