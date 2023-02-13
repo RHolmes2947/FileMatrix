@@ -16,6 +16,7 @@ public class FileMatrix {
 	
 	}
 
+
 	public FileMatrix (Matrix matrix) {
 	this(new Scanner(matrix));
 	}
