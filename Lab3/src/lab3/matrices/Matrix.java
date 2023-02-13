@@ -1,5 +1,6 @@
 package lab3.matrices;
 
+import java.io.IOException;
 /**
  * This class does all of the operations and returns the new matricies to 
  * be printed in main
@@ -12,9 +13,10 @@ package lab3.matrices;
  *
  */
 import java.lang.reflect.Array;
+import java.nio.CharBuffer;
 import java.util.Arrays;
 
-public class Matrix {
+public class Matrix implements Readable {
 	double[][] array;
 	int rows;
 	int columns;
@@ -104,6 +106,12 @@ public class Matrix {
 		}
 
 		return result.toString();
+	}
+
+	@Override
+	public int read(CharBuffer cb) throws IOException {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

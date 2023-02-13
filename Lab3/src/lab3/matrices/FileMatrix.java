@@ -1,21 +1,26 @@
 package lab3.matrices;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class FileMatrix {
 
-	// FileMatrix(input:Scanner) – Private constructor to make creating the
-	// FileMatrix from a File easier
-	public FileMatrix() {
+
+	public FileMatrix(Scanner input) {
 		Scanner in = new Scanner(System.in);
 	}
-	// FileMatrix(file:File) – Create a FileMatrix from a file (chained to previous constructor)
-	public FileMatrix(Object object) {
 
-	//	FileMatrix(matrix:Matrix) – Create a FileMatrix from an existing Matrix}
+	public FileMatrix(File file) throws FileNotFoundException {
+		this(new Scanner(file));
+	
 	}
 
+	public FileMatrix (Matrix matrix) {
+	this(new Scanner(matrix));
+	}
+	
+	
 	public boolean save(File outputFile) {
 		return false;
 	}
