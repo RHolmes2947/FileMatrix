@@ -4,10 +4,11 @@
  * Due Date: February 19, 2023
  * Description: Main of the image processing application
  */
-package lab3;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 import javax.swing.JFileChooser;
 
@@ -93,16 +94,25 @@ public class Lab3 {
 	 */
 	public NamedMatrix getKernel()
 	{
-		/* To be done by student */
 
+		Scanner input = new Scanner(System.in);
 		// Display prompts and list of kernels
-		
+	System.out.println("Please select one of the following");
+	System.out.println("1 Identity ");
+	System.out.println("2 Ridge ");
+	System.out.println("3 sharpen ");
+	System.out.println("4 unsharpen masking 5x5");
+	System.out.println("5 laplace");
+	// Scanner kernel = input;
+ 
 		// Get user input
 		
 		// Verify input is valid
 		
 		// Select kernel from input
-		
+)
+				 
+				 
 		return null;
 	}
 
