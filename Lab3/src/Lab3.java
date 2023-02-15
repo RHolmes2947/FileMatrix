@@ -92,28 +92,48 @@ public class Lab3 {
 	 * This method handled all invalid kernel selections 
 	 * @return A NamedMatrix of the kernel
 	 */
-	public NamedMatrix getKernel()
-	{
+	public NamedMatrix getKernel() 	{
 
 		Scanner input = new Scanner(System.in);
 		// Display prompts and list of kernels
-	System.out.println("Please select one of the following");
-	System.out.println("1 Identity ");
-	System.out.println("2 Ridge ");
-	System.out.println("3 sharpen ");
-	System.out.println("4 unsharpen masking 5x5");
-	System.out.println("5 laplace");
-	// Scanner kernel = input;
- 
+	int choice = 0;
+	
+	int userkernel = 0;
+	while (choice <0 || choice >=5) {
+		System.out.println("Please select one of the following");
+		System.out.println("1 Identity \n" + "2 Ridge \n" + "3 sharpen \n" + "4 unsharpen masking 5x5 \n" + "5 laplace");
+		choice = input.nextInt();
+
+		
+		switch (choice) {
+		case 1: 
+			userkernel = 0;
+		case 2:
+			userkernel = 1;
+		case 3: 
+			userkernel = 2;
+		case 4:
+			userkernel = 3;
+		case 5:
+			userkernel = 4;
+			
+		
+		}
+
+	}
+
+	return kernels[userkernel];
+	
+
 		// Get user input
 		
 		// Verify input is valid
 		
 		// Select kernel from input
-)
+
 				 
 				 
-		return null;
+
 	}
 
 	/**

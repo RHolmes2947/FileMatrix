@@ -16,10 +16,10 @@ import java.lang.reflect.Array;
 import java.nio.CharBuffer;
 import java.util.Arrays;
 
-public class Matrix implements Readable {
-	double[][] array;
-	int rows;
-	int columns;
+public class Matrix {
+	protected double[][] array;
+	protected int rows;
+	protected int columns;
 
 	public Matrix(int rows, int cols) {
 		this.array = new double[rows][cols];
@@ -106,12 +106,6 @@ public class Matrix implements Readable {
 		}
 
 		return result.toString();
-	}
-
-	@Override
-	public int read(CharBuffer cb) throws IOException {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 }
